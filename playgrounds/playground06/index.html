@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground 06: TOTVS Tech'n'Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/logo-techncoffeee.png" alt="Tech'n'Coffee" id="logo-tnc">
+    </header>
+
+    <main>
+        <h1>Playground 06</h1>
+        <p>Agora vamos aprender a trabalhar com eventos.</p>
+        
+        <section>
+            <h2>Exemplo</h2>
+
+            <div class="bloco" id="mensagem">Teste</div>
+            
+            <button onmouseover="mouseover()" onmouseleave="mouseleave()" onmousemove="mousemove()" onmousewheel="mousewheel()" onclick="click()">
+                Botão
+            </button>
+
+        </section>
+
+        <section>
+            <h2>Tarefas</h2>
+            <details>
+                <summary>Tarefa 1</summary>
+                <p>Mostre quantos botões existem na página.</p>
+                <p><code>document.getElementsByTagName('button').length</code></p>
+            </details>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/logo-totvs.png" alt="TOTVS" id="logo-totvs">
+    </footer>
+
+    <script>
+        function mouseover() {
+            let acao = 'mouseover()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function mouseleave() {
+            let acao = 'mouseleave()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function mouseup() {
+            let acao = 'mouseup()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function mousedown() {
+            let acao = 'mousedown()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function mousemove() {
+            let acao = 'mousemove()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function mousewheel() {
+            let acao = 'mousewheel()'
+            mensagem.innerHTML = acao
+            console.log(acao)
+        }
+
+        function click() {
+            alert('Clicou!')
+        }
+    </script>
+</body>
+</html>

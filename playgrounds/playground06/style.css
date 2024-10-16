@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+:root {
+  --cor1: #f2b040;
+  --cor2: #847554;
+  --cor3: #363636;
+  --cor4: #403620;
+  --cor5: #1f1e1d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--cor3);
+    background-image: url("images/fundo-site.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+section {
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    color: var(--cor3);
+    margin-bottom: 15px;
+}
+
+img#logo-tnc {
+    max-width: 400px;
+}
+
+details {
+    background-color: var(--cor3);
+    border: 2px solid var(--cor1); 
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%; 
+    font-family: Arial, sans-serif;
+    color: var(--cor1); 
+    overflow: hidden; 
+    transition: all 0.4s ease; 
+}
+
+summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor1); 
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    outline: none; 
+}
+
+summary:hover {
+    background-color: var(--cor1);
+    color: #000; 
+    border-radius: 8px;
+}
+
+details[open] summary {
+    background-color: var(--cor1);
+    color: #000;
+    border-radius: 8px 8px 0 0;
+}
+
+details p {
+    padding: 10px;
+    background-color: white; 
+    color: var(--cor5); 
+    margin: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+details[open] p {
+    opacity: 1;
+    max-height: 500px;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif;
+    color: #000; 
+    border: 2px solid var(--cor3);
+}
+  
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--cor3); 
+}
+  
+th {
+    background-color: var(--cor3); 
+    color: var(--cor1); 
+}
+  
+td {
+    color: #000; 
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+  
+ul li {
+    position: relative;
+    padding-left: 20px; 
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+  
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid var(--cor1); 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}  
+
+.bloco {
+    border: 3px dashed var(--cor1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2b1402f;
+    font-weight: bold;
+}
+
+img.foto {
+    border: 10px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    display: block;
+    margin: auto;
+}
+
+code {
+    font-family: monospace;
+}
+
+em {
+    font-style: unset;
+    font-weight: bolder;
+    color: var(--cor1);
+    -webkit-text-stroke: 1px var(--cor3);
+}
+
+button {
+    background-color: var(--cor1);
+    width: 100%;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+    
+img#logo-totvs {
+    max-width: 150px;
+    margin: 15px;
+}
