@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TOTVS</title>
+    <link rel="stylesheet" href="playground01/style.css">
+    <style>
+        article {
+            border: 2px solid #f2b040;
+            background-color: #f2b14038;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            border: none;
+        }
+
+        section#botoes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Funciona!</h1>
+    <header>
+        <img src="playground01/images/logo-techncoffeee.png" alt="Tech'n'Coffee" id="logo-tnc">
+    </header>
+
+    <main>
+        <h1>Menu Principal</h1>
+
+        <section id="botoes">
+            <a href="playgrounds/index.html">
+                <article>
+                    <h2>Playgrounds</h2>
+                    <p>Aprenda a manipular os sites</p>
+                </article>
+            </a>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <img src="playground01/images/logo-totvs.png" alt="TOTVS" id="logo-totvs">
+    </footer>
 </body>
 </html>

@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOTVS</title>
     <link rel="stylesheet" href="playground01/style.css">
+    <style>
+        article {
+            border: 2px solid #f2b040;
+            background-color: #f2b14038;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            border: none;
+        }
+
+        section#botoes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,13 +43,41 @@
 
     <main>
         <h1>Playgrounds</h1>
-        
-        <section>
-            <h2>Blocos</h2>
-            <div class="bloco" id="caixa">
-                Eu me chamo <em>caixa</em>.
-            </div>
+
+        <section id="botoes">
+            <a href="playground01/index.html">
+                <article>
+                    <h2>Playground 1</h2>
+                    <p>Blocos de texto</p>
+                </article>
+            </a>
+            <a href="playground02/index.html">
+                <article>
+                    <h2>Playground 2</h2>
+                    <p>Listas</p>
+                </article>
+            </a>
+            <a href="playground03/index.html">
+                <article>
+                    <h2>Playground 3</h2>
+                    <p>Imagens</p>
+                </article>
+            </a>
+            <a href="playground04/index.html">
+                <article>
+                    <h2>Playground 4</h2>
+                    <p>Tabelas</p>
+                </article>
+            </a>
+            <a href="playground05/index.html">
+                <article>
+                    <h2>Playground 5</h2>
+                    <p>Botões</p>
+                </article>
+            </a>
+            
         </section>
+
 
     </main>
 
