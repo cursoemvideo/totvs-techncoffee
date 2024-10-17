@@ -20,6 +20,6 @@ function classificar() {
 
 function voltar() {
     resultado.style.display = 'none'
-    ano.value = ''
-    ano.focus()
+    idade.value = ''
+    idade.focus()
 }

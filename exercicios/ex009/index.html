@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript: TOTVS Tech'n'Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/logo-techncoffeee.png" alt="Tech'n'Coffee" id="logo-tnc">
+    </header>
+
+    <main>
+        <h1><a href='javascript:history.go(-1)' style="text-decoration: none;">&#x21a9;</a> Exercício 9</h1>
+        
+        <section>
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num"> 
+            <button onclick="tabuada(num.value)">Tabuada</button>
+        </section>
+
+        <section id="resultado" style="display: none;">
+            <div id="msg"></div>
+            <button onclick="voltar()">Voltar</button>
+        </section>
+        
+    </main>
+
+    <footer>
+        <img src="images/logo-totvs.png" alt="TOTVS" id="logo-totvs">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,6 +10,6 @@ function parouimpar() {
 
 function voltar() {
     resultado.style.display = 'none'
-    ano.value = ''
-    ano.focus()
+    num.value = ''
+    num.focus()
 }
