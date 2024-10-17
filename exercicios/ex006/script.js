@@ -1,9 +1,10 @@
-function calcularidade() {
-    let nasc = Number(ano.value)
-    let calendario = new Date()
-    let atual = calendario.getFullYear()
-    let idade = atual - nasc
-    msg.innerHTML = `<p>Quem nasceu em ${nasc} fará ${idade} anos em ${atual}.</p>`
+function parouimpar() {
+    let n = Number(num.value)
+    if (n % 2 == 0) {
+        msg.innerHTML = `<p>O número ${n} é <strong>PAR</strong>.</p>`
+    } else {
+        msg.innerHTML = `<p>O número ${n} é <strong>ÍMPAR</strong>.</p>`
+    }
     resultado.style.display = 'block'
 }
 
