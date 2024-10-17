@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript: TOTVS Tech'n'Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style> 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #f2b040;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f2b04080;
+        }
+
+        button:active {
+            background-color: #f2b040;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        #resultado {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-techncoffeee.png" alt="Tech'n'Coffee" id="logo-tnc">
+    </header>
+
+    <main>
+        <h1><a href='javascript:history.go(-1)' style="text-decoration: none;">&#x21a9;</a> Exercício 10</h1>
+        
+        <section>
+            <label for="num">Número: </label>
+            <input type="number" name="num" id="num"> 
+            <button onclick="adicionar(num.value)">Adicionar</button>
+            <button onclick="remover(num.value)">Remover</button>
+        </section>
+
+        <section id="resultado" style="display: block;">
+            <table>
+                <tr id="vetor">
+                    <!-- Aqui vem os elementos do vetor -->
+                </tr>
+            </table>
+        </section>
+        
+    </main>
+
+    <footer>
+        <img src="images/logo-totvs.png" alt="TOTVS" id="logo-totvs">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
