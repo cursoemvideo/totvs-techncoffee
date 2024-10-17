@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <h1><a href='javascript:history.go(-1)' style="text-decoration: none;">&#x21a9;</a> Playground 05</h1>
+        <h1>Playground 05</h1>
         <p>Agora vamos aprender a acessar elementos não identificados (que não possuem id)</p>
         
         <section>
@@ -31,22 +31,26 @@
             <details>
                 <summary>Tarefa 1</summary>
                 <p>Mostre quantos botões existem na página.</p>
+                <p><code>document.getElementsByTagName('button').length</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 2</summary>
                 <p>Mudar o texto de um dos botões</p>
+                <p><code>document.getElementsByTagName('button')[2].innerText = 'Teste'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 3</summary>
                 <p>Configure uma ação para um dos botões</p>
+                <p><code>document.getElementsByTagName('button')[3].onclick = function () { alert('clicou em mim') }</code></p>
             </details>
 
 
             <details>
                 <summary>Tarefa 4</summary>
                 <p>Apague um botão</p>
+                <p><code>document.getElementsByTagName('button')[2].remove()</code></p>
             </details>
 
         </section>

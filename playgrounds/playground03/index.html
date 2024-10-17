@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <h1><a href='javascript:history.go(-1)' style="text-decoration: none;">&#x21a9;</a> Playground 03</h1>
+        <h1>Playground 03</h1>
         <p>Agora vamos manipular imagens</p>
         
         <section id="album">
@@ -27,31 +27,40 @@
             <details>
                 <summary>Tarefa 1</summary>
                 <p>Troque a foto de um palestrante por outro.</p>
+                <p><code>fotografia.src = "images/foto02.png"</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 2</summary>
                 <p>Torne a imagem em preto-e-branco</p>
+                <p><code>fotografia.style.filter = 'grayscale(100%)'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 3</summary>
                 <p>Faça a imagem ficar embaçada</p>
+                <p><code>fotografia.style.filter = 'blur(5px)'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 4</summary>
                 <p>Combine filtros de embaçar e preto-e-branco</p>
+                <p><code>fotografia.style.filter = 'blur(5px) grayscale(100%)'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 5</summary>
                 <p>Inverta a imagem horizontalmente</p>
+                <p><code>fotografia.style.transform = 'scaleX(-1)'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 6</summary>
                 <p>Adicione uma nova imagem dinamicamente no site.</p>
+                <p><code>let i = new Image()<br>
+                    i.src = 'images/foto02.png'<br>
+                    i.className = 'foto'<br>
+                    album.appendChild(i)</code></p>
             </details>
 
         </section>

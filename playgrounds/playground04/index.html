@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <h1><a href='javascript:history.go(-1)' style="text-decoration: none;">&#x21a9;</a> Playground 04</h1>
+        <h1>Playground 04</h1>
         <p>Agora vamos manipular tabelas</p>
         
         <section>
@@ -49,36 +49,49 @@
             <details>
                 <summary>Tarefa 1</summary>
                 <p>Quantas pessoas estão cadastradas na tabela?</p>
+                <p><code>dados.rows.length - 1</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 2</summary>
                 <p>Mude o nome da primeira pessoa da lista</p>
+                <p><code>dados.rows[1].cells[0].textContent = 'Gustavo'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 3</summary>
                 <p>Mude a cor de uma linha inteira</p>
+                <p><code>dados.rows[1].style.backgroundColor = 'red'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 4</summary>
                 <p>Apague uma linha da tabela</p>
+                <p><code>dados.deleteRow(1)</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 5</summary>
                 <p>Aumente a idade de alguém em 10 anos.</p>
+                <p><code>dados.rows[1].cells[1].textContent += 10 // ERRO <br>
+                    let idade = Number(dados.rows[1].cells[1].textContent)<br>
+                    dados.rows[1].cells[1].textContent = idade + 10</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 6</summary>
                 <p>Acrescente uma nova pessoa</p>
+                <p><code>let linha = dados.insertRow()<br>linha.insertCell().innerText = 'Ana'<br>linha.insertCell().innerText = '45'</code></p>
             </details>
 
             <details>
                 <summary>Tarefa 7</summary>
                 <p>Cadastre uma pessoa personalizada</p>
+                <p><code>let nome = prompt('Qual é o nome da pessoa?')<br>
+                    let idade = prompt('Quantos anos ela tem?')<br>
+                    let linha = dados.insertRow()<br>
+                    linha.insertCell().textContent = nome<br>
+                    linha.insertCell().textContent = idade</code></p>
         </section>
     </main>
 
